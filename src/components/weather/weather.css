@@ -1,0 +1,54 @@
+.weatherHidden {
+  display:none;
+}
+
+.weatherWrapper{
+  width:100%;
+  background:rgba(255,255,255,0.9);
+  max-height:50vh;
+  display:flex;
+  overflow:auto;
+  position:absolute;
+  bottom:0;
+  transform:translateY(-50%);
+  justify-content: space-around;
+}
+
+.weatherCurrentWrapper{
+  margin:10px;
+}
+
+.weatherForecastWrapper {
+
+}
+
+.weatherList {
+  list-style:none;
+  border-radius:5px;
+  flex:2;
+  display:flex;
+}
+
+.weatherList li {
+  margin:5px;
+  padding:5px;
+
+}
+
+.weatherInfoWrapper {
+  display:flex;
+}
+
+@media screen and (max-width:450px){
+      .weatherWrapper{
+        position:static;
+        transform:none;
+        flex-direction:column;
+        max-height:none;
+        margin-top:40px;
+      }
+
+      .weatherList {
+        flex-direction:column;
+      }
+}
